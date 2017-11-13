@@ -5,10 +5,8 @@ import urllib2
 '''
 Charles Weng
 Period 7 SoftDev
-K #13: A RESTful Journey Skyward
+HW #13: A RESTful Journey Skyward
 2017-11-09
-
-I"m not sure why it's sayintg load takes only one arguement when I'm using loads, but I'm pretty sure this works
 '''
 app = Flask(__name__)
 
