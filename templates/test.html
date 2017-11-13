@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>REST APIs</title>
+    <title>The Binding of Isaac Items</title>
   </head>
   <body>
-      this is the api things
-      <br><img src={{url}} alt="something supposed to be here">
-      <br>Date: {{date}}
-      <br>{{exp}}
+    These are all the items in The Binding of Isaac
+    <br>
+    {% for x in items %}
+      <br><img src={{x["sprite_url"]}} alt="item image">
+      <!-- link to item as well as item name -->
+      <br>This is: <a href={{x["url"]}}>{{x["name"]}}</a>
+      <br>
+    {% endfor %}
 
   </body>
 </html>
